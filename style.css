@@ -105,9 +105,8 @@ ul, li {
 }
 
 .chief_img {
-    width: 590px;
-    opacity: 0.009;
-    height: 520px;
+    width: 100%;
+    opacity: 0.005;
 }
 
 /* Section About */
@@ -142,6 +141,7 @@ ul, li {
 
 .about_list {
     display: grid; 
+    gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     align-items: center;
 }
@@ -159,7 +159,6 @@ ul, li {
 
 .about_img {
     width: 100px;
-    height: 100px;
     margin-bottom: 10px;
 }
 
@@ -341,6 +340,7 @@ ul, li {
 
 .package_img {
     position: absolute;   
+    z-index: 0;
 }
 
 .package1 {
@@ -371,13 +371,12 @@ ul, li {
 }
 
 .whyus_text {
-    padding: 40px 40px 0 40px;
+    padding: 40px 40px 0 20px;
     position: relative;
+    z-index: 10;
 }
 
 .whyus_descr {
-    word-break: break-all;
-    width: 85%;
     font-weight: 400;
     margin-top: 20px;
     font-size: 20px;
@@ -491,6 +490,7 @@ ul, li {
 .companies_img {
     max-width: 16%;
     max-height: 60px;
+    object-fit: contain;
 }
 
 
@@ -560,3 +560,342 @@ ul, li {
 .footer_legal-link {
     color: rgba(185, 185, 185, 1);
 }
+
+/* Media screen ; Adaptive */
+
+@media screen and (max-width: 1340px) {
+    .whyus_reason {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+    .brand_content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .companies_elements {
+        gap: 70px;
+    }
+    .footer_main-item {
+        gap: 15px;
+    }
+    .whyus_text {
+        padding: 20px 20px 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 1160px) {
+    .chief {
+        margin-left: 60px;
+    }
+    .contact_btn {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 5.3rem;
+        line-height: 88px;
+    }
+    .about {
+        background-size: 260px ;
+    }
+    .about_list {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 40px;
+    }
+    .about_parag {
+        width: 50%;
+        margin: 5px 0;
+    }
+    .about_subtitle {
+        font-size: 2rem;
+    }
+    .footer_main-icons img {
+        max-width: 150px;
+    }
+    .footer_main-text {
+        font-size: 1rem;
+    }
+    .logo_box {
+        font-size: 2rem;
+    }
+    .whyus_reason {
+        font-size: 2rem;
+    }
+    .whyus_subtitle {
+        font-size: 2rem;
+    }
+    .whyus_descr {
+        font-size: 1rem;
+    }
+    .whyus_boxes {
+        grid-template-rows: repeat(2, 320px);
+    }
+    .whyus_img {
+        width: 260px;
+    }
+    .brand_title {
+        font-size: 4rem;
+        line-height: 77px;
+    }
+    .brand_descr {
+        font-size: 1.1rem;
+    }
+    .brand_content {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .companies_elements {
+        gap: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .chief {
+        flex-direction: column;
+        gap: 130px;
+        margin: 0 0 100px 0;
+    }
+    .chief_text {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 16px 0;
+    }
+    .chief_img {
+        margin-left: 50px;
+    }
+    .chief_descr {
+        margin: 0 0 40px 0;
+        width: 100%;
+    }
+    .grow_title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 0 ;
+    }
+    .grow_textwrap {
+        margin: 40px 16px;
+        align-items: unset;
+    }
+    .grow_btn {
+        margin: 40px 20px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .whyus_text {
+        padding: 20px;
+    }
+    .discout_list {
+        gap: 20px;
+    }
+    .discout_descr {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .discout_value {
+        font-size: 3rem;
+    }
+    .whyus_boxes {
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    }
+    .whyus_descr {
+        margin-top: 5px;
+    }
+    .whyus_img {
+        width: 220px;
+    }
+    .cashback {
+        background-size: 200px;
+    }
+    .package1 {
+        width: 70px;
+        height: 120px;
+        top: inherit;
+        bottom: 10px;
+    }
+    .package2 {
+        right: 120px;
+    }
+    .customers {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .power {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .cashback {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .ai {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .brand_content {
+        grid-template-columns: 1.3fr 1fr;
+        gap: 20px;
+    }
+    .brand_title {
+        line-height: 62px;
+    }
+    .brand_icons {
+        grid-template-columns: repeat(2, 90px);
+        grid-template-rows: repeat(4, 90px);
+        gap: 15px;
+    }
+    .facebook {
+        grid-column: 1 / 2;   
+        grid-row: 1;
+    }
+    .insta {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+    .twitter {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+    .tiktok {
+        grid-column: 2 / 3;
+        grid-row: 4;
+    }
+
+    .footer_main-list,
+    .footer_legal-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 575px) { /*for phones*/
+    .footer {
+        padding: 40px 40px 20px;
+    }
+    .footer_main-list,
+    .footer_main-item,
+    .footer_main-icons {
+        display: block;
+    }
+    
+
+    .footer_main-item .logo_box {
+        margin-bottom: 40px;
+    }
+
+    .about {
+        background-image: none;
+        margin: 0;
+    }
+
+    .nav_list {
+        padding: 0 16px;
+    }
+
+    .about_title {
+        margin: 0 16px;
+    }
+
+    .about_parag {
+        width: 100%;
+    }
+
+    .about_text {
+        margin: 30px 16px 40px;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .discout_list {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .discout_item {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .whyus_boxes {
+        margin: 40px 16px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: repeat(2, minmax(min-content, 400px));
+    }
+
+    .whyus_img {
+        width: 180px;
+        border-radius: 0px 0 0 30px;
+    }
+
+    
+    .customers {
+        flex-direction: column-reverse;
+    }
+    .ai {
+        flex-direction: column;
+    }
+    .ai img {
+        align-self: flex-end;
+        margin-right: 55px;
+    }
+    .brand_content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 16px;
+    }
+    .brand_title {
+        line-height: 42px;
+    }
+    .brand_icons {
+        grid-template-columns: repeat(4, 65px);
+        grid-template-rows: repeat(2, 90px);
+    }
+    .companies_elements {
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+    .companies_img {
+        max-width: 40%;
+    }
+    .facebook {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    
+    .insta {
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+    
+    .twitter {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+    
+    .tiktok {
+        grid-column: 4 / 5;
+        grid-row: 2;
+    }
+    .footer_main-item .footer_main-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_main-item .contact_btn {
+        margin: 40px 0;
+    }
+
+    .footer_legal-list {
+        flex-direction: column;
+    }
+    
+    .footer.line {
+        margin: 40px 0 10px;
+    }
+}
+
