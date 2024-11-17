@@ -11,9 +11,75 @@
     <title>Budss company</title>
 </head>
 <body>
-    <div class="contact_form"></div>
-    <div class="alert_thank"></div>
-    <div class="cookie"></div>
+    <div class="burger_menu">
+        <div class="burger_close">
+            <div class="burger_close-btn"></div>
+        </div>
+        <button class="contact_btn">Contact Sales</button>
+        <ul class="burger_menu__list">
+            <li class="burger_menu__list">For Business</li>
+            <li class="burger_menu__list">For Customers</li>
+            <li class="burger_menu__list">Privacy Policy</li>
+            <li class="burger_menu__list">Terms Of Use - Seller</li>
+            <li class="burger_menu__list">Terms of Use - Sellers & Customers</li>
+        </ul>
+    </div>
+    <div class="contact_form">
+        <div class="close_small close_form">
+            <div class="close_small-btn"></div>
+        </div>
+        <div class="contact_form__content">
+            <div class="contact_form__inputs">
+                <form action="">
+                    <label for="name">Name<sup>*</sup></label>
+                    <input type="text" name="name" id="name" placeholder="Enter name" required>
+                    <span class="unrequired_text false_name"></span>
+                    <label for="email">Email<sup>*</sup></label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
+                    <span class="unrequired_text false_email"></span>
+                    <label for="number">Phone number<sup>*</sup></label>
+                    <input type="number" name="number" id="number" placeholder="+ 7 911 111 11 11" required>
+                    <span class="unrequired_text false_number"></span>
+                    <label for="company_name">Company</label>
+                    <input type="text" name="company_name" id="company_name" placeholder="Enter company">
+
+                    <label for="web_url">Website/Store URL</label>
+                    <input type="text" name="web_url" id="web_url" placeholder="Enter Website/Store URL">
+                    <label for="submit">By submitting this form you are agreeing to Budss's <span>Privacy Policy</span> and <span>Terms of Use</span></label>
+                    <input type="submit" value="Contact sales">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="alert_thank">
+        <div class="alert_thank__content">
+            <div class="close_small close_alert">
+                <div class="close_small-btn"></div>
+            </div>
+            <figure>
+                <img src="./img/form/thank.png" alt="thank" class="alert_thank__img">
+                <figcaption><h3 class="alert_thank__title">Thank You</h3></figcaption>
+            </figure>
+            <p class="alert_thank_descr">Thank you, we have received your application and will contact you soon!</p>
+            <button class="alert_thank__btn">Super</button>
+        </div>
+    </div>
+    <div class="cookie">
+        <div class="cookie_content">
+            <div class="cookie_text">
+                <p class="cookie_text">
+                    This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.
+                </p>
+            </div>
+            <div class="cookie_buttons">
+                <button class="cookie_btn accept">Accept</button>
+                <button class="cookie_btn decline">Decline</button>
+            </div>
+            <div class="close_small cookie_close">
+                <div class="close_small-btn"></div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <nav class="navigation">
             <div class="nav_wrapper">
@@ -24,6 +90,9 @@
                 <li class="nav_item">
                     <div class="logo_box">
                         <img class="logo" src="./img/logo.svg" alt="Logo">budss
+                    </div>
+                    <div class="nav_burger">
+                        <div class="nav_burger-btn"></div>
                     </div>
                 </li>
                 <li class="nav_item"><button class="contact_btn">Contact Sales</button></li>
@@ -69,14 +138,14 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="app">
+        <section class="app">
             <div class="app_wrapper">
-                <p class="moving_text grey">How Budss Works</p>
+                <p class="moving_text green">How Budss Works</p>
                 <p class="moving_text orange">How Budss Works</p>
                 <p class="moving_text purple">How Budss Works</p>
                 <img class="app_img" src="./img/app/app.png" alt="app">
             </div>
-        </section> -->
+        </section>
         <section class="discout">
             <ul class="discout_list">
                 <li class="discout_item">
