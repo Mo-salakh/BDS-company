@@ -1,1 +1,1 @@
-Demo[https://mo-salakh.github.io/BDS-company/]
+[Demo](https://mo-salakh.github.io/Clock/)
